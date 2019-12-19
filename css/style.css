@@ -6,12 +6,21 @@
 .card{
   margin: 30px;
   width: 20%;
-  background-color: #66ff99;
+  background-color: #d5eef6;
   float: left;
   border-radius: 30px;
   position: relative;
 }
+.card button{
+  margin-top: -28px;
+  color: white;
+  background-color: #4da6ff;
+  border: 1px solid #4da6ff;
+}
 
+.card a{
+  text-decoration: none;
+}
 .card::after{
   content: "";
   width: 18%;
