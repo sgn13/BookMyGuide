@@ -73,15 +73,12 @@ opacity: 0.5;
 
 /*footer*/
 footer{
-<<<<<<< HEAD
     float: left;
     width: 100%;
 	margin-top: 5px;
-=======
 	float: left;
 	width: 100%;
 	margin-top: 50px;
->>>>>>> 2ac3bbabe212521619282b4b62449aa529877cda
 	background-color: #1c6a84;
 	color: white;
 	padding: 50px;
@@ -93,10 +90,7 @@ footer{
 .siltes a:hover{
  color:red;
 }
-<<<<<<< HEAD
 
 .dropdown-menu{
 	background-color: black;
 }
-=======
->>>>>>> cca00409a8fb46e57a34bf778b3ac540a286571e
