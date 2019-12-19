@@ -77,9 +77,7 @@ opacity: 0.5;
 
 /*footer*/
 footer{
-<<<<<<< HEAD
 	margin-top: 5px;
-=======
 
     float: left;
     width: 100%;
@@ -87,7 +85,7 @@ footer{
 	float: left;
 	width: 100%;
 	margin-top: 50px;
->>>>>>> 8006284e94a1d6eb69678f9c4084e19021540eae
+
 	background-color: #1c6a84;
 	color: white;
 	padding: 50px;
