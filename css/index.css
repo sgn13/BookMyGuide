@@ -84,3 +84,7 @@ footer{
 .siltes a:hover{
  color:red;
 }
+
+.dropdown-menu{
+	background-color: black;
+}
