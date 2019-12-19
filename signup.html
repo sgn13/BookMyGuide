@@ -4,42 +4,256 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
 
-<div class="container">
-  <div id="formContent">
-    <!-- Tabs Titles -->
+<div class="top">	
+	<div class="logoo">
+		<img src="image/logow.png">
+	</div>		
+		<img src="image/siloutte1.jpg">
+	</div>
 
-    <!-- Icon -->
-    <div class="fadeIn first">
-      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" /><h1>Sign up</h1>
-    </div>
+<nav class="navbar navbar-expand-lg ">
 
-    <!-- Login Form -->
-    <form>
+
+  <div class=" container-fluid collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item active col col-lg-2" style="box-shadow: inset 0 -1px 0 0 cyan;">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item col col-lg-2">
+        <a class="nav-link" href="#">Our guides</a>
+      </li>
+      <li class="nav-item col col-lg-2">
+        <a class="nav-link" href="#">Destinations</a>
+      </li>
+      <li class="nav-item col col-lg-2">
+        <a class="nav-link" href="#">About us</a>
+      </li>
+      <li class="nav-item col col-lg-2">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+      <li class="nav-item col col-lg-2">
+        <a class="nav-link" href="#">Our Services</a>
+      </li>
+      <li class="nav-item col col-lg-2">
+        <a class="nav-link" href="#">FAQ</a>
+      </li>
       
-  			<div class="row">
-   			 <div class="col">
-    			  <input type="text" class="form-control" placeholder="First name">
-    		</div>
-   			 <div class="col">
-  			    <input type="text" class="form-control" placeholder="Last name">
-  			  </div>
- 			 </div>
- 			<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-		
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
 
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
+    
+        
+    	<li class="nav-item col col-lg-2" id="login">	
+        <a class="nav-link log" href="#"> <i class="fas fa-user"></i>Log In</a>
+      </li>
+      <li class="nav-item col col-lg-2" id="signin">
+        <a class="nav-link log" href="#"><i class="fas fa-sign-in-alt"></i>Sign In</a>
+      </li>
+
+
+   </ul>
+  </div>
+</nav>
+
+
+<!-- sign up -->
+
+<div class="container">
+	<div class="col col-md-8">
+		<h1 class="mt-4 mb-4">Sign up</h1>
+		<form>
+			  <div class="row">
+			    <div class="col">
+			    	<label for="firstName">First name</label>
+			      <input type="text" class="form-control" placeholder="First name">
+			    </div>
+			    <div class="col">
+			    	<label for="lasName">Last name</label>
+			      <input type="text" class="form-control" placeholder="Last name">
+			    </div>
+			  </div>
+
+
+		<div class="mb-3"><br>
+          	<label for="userName">User name</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Your username is required.
+            </div>
+          </div>
+        </div>
+
+
+         <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+         <div class="mb-3">
+          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>Nepal</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Choose...</option>
+              <option>Kathmandu</option>
+              <option>Bhaktpur</option>
+              <option>Lalitpur</option>
+              <option>Pokhara</option>
+              <option>Birgunj</option>
+              <option>Biratnagar</option>
+
+
+
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+        <div class="d-block my-3">
+        	<span>Choose :</span>
+          <div class="custom-control custom-radio">
+            <input id="guide" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="guide">Guide</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="tourist" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="tourist">Tourist</label>
+          </div>
+          
+        </div>
+        
+        
+        <hr class="mb-4">
+        <button class="btn btn-secondary btn-lg btn-block" type="submit" onclick="checkPerson()">Sign Up</button>
+      </form>
     </div>
+  </div>
+		</form>
+	</div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+  <!-- Footer Text -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <p>
+          <i class="fas fa-map-marker-alt mr-4"></i> Balkumari,Lalitpur</p>
+        <p>
+          <i class="fas fa-envelope mr-4"></i> info@example.com</p>
+        <p>
+          <i class="fas fa-phone mr-4"></i> + 01 234 567 88</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">About the company</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
+          commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
+          excepturi hic.</p>
+
+          <div class="sites  mt-5">
+          <a class="fb-ic" href="https://www.facebook.com/Book-my-guide-100987671412994/">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic" href="#">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic" href="#">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+          <!--Instagram-->
+          <a class="ins-ic" href="#">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
 
   </div>
-</div>
+  <!-- Footer Text -->
+
+
+
+  <!-- js -->
+  <script>
+function checkPerson()
+{
+    if(document.getElementById('guide').checked)
+    {
+        window.open('guideform.html'); 
+    }
+    else if(document.getElementById('tourist').checked)
+    {
+         window.location.href="guidelist.html";
+    }
+
+}
+</script>
 
 
 
