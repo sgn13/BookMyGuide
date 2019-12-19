@@ -1,3 +1,7 @@
+html{
+	width: 100%;
+    height: 100%;
+}
 body{
 	margin: 0px;
 	padding: 0px;
@@ -34,7 +38,7 @@ body{
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 12px;
-	
+
 }
 #login{
 	margin-left: 15px;
@@ -43,7 +47,7 @@ body{
 	color: #c0c1c2;
 }
 .nav-item:hover{
-	 box-shadow: inset 0 -1px 0 0 cyan; 
+	 box-shadow: inset 0 -1px 0 0 cyan;
 }
 .navbar-nav .fas{
 	color: white;
@@ -54,6 +58,7 @@ body{
 
 .carousel-item img{
 	height: 600px;
+	background-color:white;
 	width: 100%;
 }
 .carousel-item{
@@ -72,7 +77,16 @@ opacity: 0.5;
 
 /*footer*/
 footer{
+<<<<<<< HEAD
 	margin-top: 5px;
+=======
+    float: left;
+    width: 100%;
+	margin-top: 5px;
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+>>>>>>> 86755ad622bec4de0d812de1055a429890f75ed2
 	background-color: #1c6a84;
 	color: white;
 	padding: 50px;
@@ -83,4 +97,8 @@ footer{
 }
 .siltes a:hover{
  color:red;
+}
+
+.dropdown-menu{
+	background-color: black;
 }
