@@ -1,71 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-<style >
-  .whole{
-    height: 250px;
-    width: 100%;
-  }
+    <title></title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style >
+     .whole{
+      height: 450px;
+      background-color:white;
+    }
+	.services{
+    margin-left: 40px;
+		margin-top: 20px;
+	}
+
+	.btnbtn-link{
+		text-decoration: none;
+		padding: 0;
+        border: none;
+        background: none;
+         font-size: 25px;
+        
+	}
+	.btnbtn-linkcollapsed{
+			text-decoration: none;
+		padding: 0;
+        border: none;
+        background: none;
+        font-size: 25px;
+
+	}
+
 </style>
 </head>
+
 <body>
-<div class="top">
-	<div class="logoo">
-		<img src="image/logow.png">
-	</div>
-		<img src="image/siloutte1.jpg">
-	</div>
+ <div class="top">
+  <div class="logoo">
+    <img src="image/logow.png">
+  </div>
+    <img src="image/siloutte1.jpg">
+  </div>
 
 <nav class="navbar navbar-expand-lg ">
 
 
   <div class=" container-fluid collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto ">
-
       <li class="nav-item active col col-lg-2" >
         <a class="nav-link" href="index.html">Home </a>
       </li>
-      <li class="nav-item active col col-lg-2" style="box-shadow: inset 0 -1px 0 0 cyan;">
-        <a class="nav-link" href="guidelist.html">Our Guides <span class="sr-only">(current)</span></a>
+      <li class="nav-item col col-lg-2" >
+        <a class="nav-link" href="guidelist.html">Our guides </a>
       </li>
-      <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="destination.html">Destinations</a>
+      <li class="nav-item col col-lg-2" >
+        <a class="nav-link" href="destination.html">Destinations</a>   
       </li>
-
-
+      
       <li class="nav-item col col-lg-2" >
         <a class="nav-link" href="gallery.html">Gallery </a>
       </li>
-      <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="services.html">Our Services</a>
+      <li class="nav-item col col-lg-2" style="box-shadow: inset 0 -1px 0 0 cyan;">
+        <a class="nav-link" href="services.html">Our Services <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item col col-lg-2">
         <a class="nav-link" href="faq.html">FAQ</a>
-      </li>
+      </li>  
        <li class="nav-item col col-lg-2">
         <a class="nav-link" href="about.html">About us</a>
       </li>
-      <li class="nav-item col col-lg-2" id="login">
-        <a class="nav-link log" href="login.html"> <i class="fas fa-user"></i>Log In</a>
-			</li>
+      <li class="nav-item col col-lg-2" id="login"  > 
+        <a class="nav-link log" href="login.html"> <i class="fas fa-user"></i>Log In </a>
+
       <li class="nav-item col col-lg-2" id="signin">
         <a class="nav-link log" href="signup.html"><i class="fas fa-sign-in-alt"></i>Sign Up</a>
       </li>
    </ul>
   </div>
 </nav>
-<div class="whole"
-	<h1>Guide verification form</h1>
+
+  <div class="whole">
+	<div class="services">
+		<h1 style = font-style:"verdana"></h1>
+<div class="accordion" id="accordionExample">
+
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btnbtn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        	
+          Full tour package
+      
+        </button>
+
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Includes everything from pick up to drop off
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btnbtn-linkcollapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Partial tour package
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Includes activities for a certain time duration
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </div>
 
 
-	<button class="btn btn-primary" ><a href="signup.html" >Back</a></button>
-
-
+  
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4">
 
@@ -99,7 +158,7 @@
         <p>This website aims to contribute to our tourism industry especially the ‘Visit Nepal 2020’ campaign by allowing the tourists to choose guides as per their needs.The profiles of the guides as well as the ratings and reviews to help them make their decision.The guides will also have a greater exposure and will be able to freelance or work full time in the site.Our registration system and payment system is set up in such a way that it will prevent both customer and guide from fraud.Overall this website is meant to give the customers more freedom over the guides they choose.</p>
 
           <div class="sites  mt-5">
-          <a class="fb-ic" href="https://www.facebook.com/Book-my-guide-100987671412994/" target="_blank">
+          <a class="fb-ic" href="#">
             <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
           </a>
           <!-- Twitter -->
@@ -125,5 +184,10 @@
 
   </div>
   <!-- Footer Text -->
+
+</footer>
+<!-- Footer -->
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
