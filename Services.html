@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+    <title></title>
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <style>
-    .whole{
-      height: 500px;
+  <style >
+     .whole{
       height: 450px;
       background-color:white;
     }
-    .gallery{
-      margin-left: 20px;
-      float:left;
-      position: relative;
-      margin:10px;
-      border: 2px ;
-      width: 200px;
+	.services{
+    margin-left: 40px;
+		margin-top: 20px;
+	}
 
-    }
-    .gallery:hover{
-      -moz-box-shadow: 0 0 10px #ffffff;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc;
-    }
-    .gallery img{
-      width:100%;
-      height: 100px;
-      -moz-box-shadow: 0 0 10px #1c6a84;
-      -webkit-box-shadow: 0 0 10px #1c6a84;
-      box-shadow: 0 0 10px #1c6a84;
-    }
-    .gallery img{
-      float:left;
-      width:180px;
-      height: 180px;
-       box-shadow: 10px 10px 5px #ccc;
-      -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      -khtml-box-shadow: 10px 10px 5px #ccc;
+	.btnbtn-link{
+		text-decoration: none;
+		padding: 0;
+        border: none;
+        background: none;
+         font-size: 25px;
+        
+	}
+	.btnbtn-linkcollapsed{
+			text-decoration: none;
+		padding: 0;
+        border: none;
+        background: none;
+        font-size: 25px;
 
-    }
+	}
 
-
-  </style>
+</style>
 </head>
+
 <body>
-  <div class="top">
+ <div class="top">
   <div class="logoo">
     <img src="image/logow.png">
   </div>
@@ -62,94 +53,78 @@
       <li class="nav-item active col col-lg-2" >
         <a class="nav-link" href="index.html">Home </a>
       </li>
-      <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="guidelist.html">Our guides</a>
+      <li class="nav-item col col-lg-2" >
+        <a class="nav-link" href="guidelist.html">Our guides </a>
       </li>
       <li class="nav-item col col-lg-2" >
-        <a class="nav-link" href="destination.html">Destinations</a>
+        <a class="nav-link" href="destination.html">Destinations</a>   
       </li>
       <li class="nav-item col col-lg-2">
         <a class="nav-link" href="#">About us</a>
       </li>
+      <li class="nav-item col col-lg-2" >
+        <a class="nav-link" href="gallery.html">Gallery </a>
+      </li>
       <li class="nav-item col col-lg-2" style="box-shadow: inset 0 -1px 0 0 cyan;">
-        <a class="nav-link" href="gallery.html">Gallery <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="services.html">Our Services <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="services.html">Our Services</a>
-      </li>
-      <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="#">FAQ</a>
-      </li>
+        <a class="nav-link" href="faq.html">FAQ</a>
+      </li>  
+      <li class="nav-item col col-lg-2" id="login"  > 
+        <a class="nav-link log" href="login.html"> <i class="fas fa-user"></i>Log In </a>
 
-
-
-
-      <li class="nav-item col col-lg-2" id="login">
-        <a class="nav-link log" href="#"> <i class="fas fa-user"></i>Log In</a>
-      </li>
       <li class="nav-item col col-lg-2" id="signin">
         <a class="nav-link log" href="signup.html"><i class="fas fa-sign-in-alt"></i>Sign In</a>
       </li>
    </ul>
   </div>
 </nav>
-<div class="whole">
 
-  <div class="gallery">
+  <div class="whole">
+	<div class="services">
+		<h1 style = font-style:"verdana"></h1>
+<div class="accordion" id="accordionExample">
 
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btnbtn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        	
+          Full tour package
+      
+        </button>
 
-    <a target="_blank" href="a.jpg">
-    <a target="_blank" href="image/a.jpg">
-      <!--target="_blank" is used to open new window-->
-      <img src="image/a.jpg" alt="pic1" width="500" height="500">
-      <!--alt is used for alternate info if image isnt displayed-->
-
-    </a>
-  Basantapur
-  </div>
-  <div class="gallery">
-    <a target="_blank" href="image/Mardi.jpg">
-      <img src="image/Mardi.jpg" alt="pic2" width="500" height="500">
-    </a>
-    Mardi himal
-  </div>
-  <div class="gallery">
-
-    <a target="_blank" href="imgale/b.jpg">
-    <a target="_blank" href="image/b.jpg">
-      <img src="image/b.jpg" alt="pic2" width="500" height="500">
-    </a>
-    Annapurna
-  </div>
-  <div class="gallery">
-    <a target="_blank" href="image/c.jpg">
-      <img src="image/c.jpg" alt="pic2" width="500" height="500">
-    </a>
-    Gosaikunda lake
-  </div>
-  <div class="gallery">
-
-    <a target="_blank" href="Rolpa.jpg">
-    <a target="_blank" href="image/Rolpa.jpg">
-      <img src="image/Rolpa.jpg" alt="pic2" width="500" height="500">
-    </a>Tcho Rolpa
+      </h2>
     </div>
-    <div class="gallery">
 
-    <a target="_blank" href="f.jpg">
-    <a target="_blank" href="image/f.jpg">
-      <img src="image/f.jpg" alt="pic2" width="500" height="500">
-    </a>
-    Patan
-  </div><div class="gallery">
-
-    <a target="_blank" href="g.jpg">
-      <img src="image/g.jpg" alt="pic2" width="500" height="500">
-    </a>
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Includes everything from pick up to drop off
+      </div>
     </div>
   </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btnbtn-linkcollapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Partial tour package
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Includes activities for a certain time duration
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
 
+  
+<!-- Footer -->
 <footer class="page-footer font-small teal pt-4">
 
   <!-- Footer Text -->
@@ -184,8 +159,6 @@
           excepturi hic.</p>
 
           <div class="sites  mt-5">
-
-          <a class="fb-ic" href="https://www.facebook.com/Book-my-guide-100987671412994/">
           <a class="fb-ic" href="#">
             <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
           </a>
@@ -218,3 +191,4 @@
 <script src="js/jquery-slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
+</html>
