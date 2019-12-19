@@ -20,7 +20,7 @@
 
   <div class=" container-fluid collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto ">
-      <li class="nav-item active col col-lg-2" style="box-shadow: inset 0 -1px 0 0 cyan;">
+      <li class="nav-item active col col-lg-2" >
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item col col-lg-2">
@@ -46,10 +46,10 @@
     
         
     	<li class="nav-item col col-lg-2" id="login">	
-        <a class="nav-link log" href="#"> <i class="fas fa-user"></i>Log In</a>
+        <a class="nav-link log" href="login.html"> <i class="fas fa-user"></i>Log In</a>
       </li>
-      <li class="nav-item col col-lg-2" id="signin">
-        <a class="nav-link log" href="#"><i class="fas fa-sign-in-alt"></i>Sign In</a>
+      <li class="nav-item col col-lg-2" id="signin" style="box-shadow: inset 0 -1px 0 0 cyan;">
+        <a class="nav-link log" href="signup.html"><i class="fas fa-sign-in-alt"></i>Sign In</a>
       </li>
 
 
@@ -95,6 +95,20 @@
           <input type="email" class="form-control" id="email" placeholder="you@example.com">
           <div class="invalid-feedback">
             Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="password">
+          <div class="invalid-feedback">
+            Please enter a password.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="re-password">Confirm-Password</label>
+          <input type="re-password" class="form-control" id="re-password" placeholder="Re-password">
+          <div class="invalid-feedback">
+            Please enter a password.
           </div>
         </div>
 
