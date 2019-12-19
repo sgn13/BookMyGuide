@@ -54,6 +54,7 @@ body{
 
 .carousel-item img{
 	height: 600px;
+	background-color:white;
 	width: 100%;
 }
 .carousel-item{
@@ -72,7 +73,9 @@ opacity: 0.5;
 
 /*footer*/
 footer{
-	margin-top: 50px;
+    float: left;
+    width: 100%;
+	margin-top: 5px;
 	background-color: #1c6a84;
 	color: white;
 	padding: 50px;
