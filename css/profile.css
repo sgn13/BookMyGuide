@@ -1,0 +1,52 @@
+.profile-image{
+  padding: 10px;
+}
+
+.profile-image img{
+  height: 100px;
+  width: 100px;
+  padding:  1px;
+  float: left;
+  border: 2px solid #1c6a84;
+  border-radius: 50%;
+  margin-bottom: 100%;
+  margin-right: 10px;
+}
+
+.profile h5{
+  color: grey;
+}
+
+.profile h2{
+  /* margin-top: -20px; */
+}
+
+.bio-data{
+    margin-top: -10px;
+}
+
+.bio-data span{
+  font-size: small;
+}
+
+/* reviews */
+
+.review-class{
+  padding: 5px;
+  margin-left: 110px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.review-tourist img{
+  height: 25px;
+  width: 25px;
+  padding: 1px;
+  float: left;
+  border: 2px solid #1c6a84;
+  border-radius: 50%;
+}
+
+span a{
+  margin-left: 10px;
+}
