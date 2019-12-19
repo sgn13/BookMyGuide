@@ -19,11 +19,11 @@
 
   <div class=" container-fluid collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto ">
-      <li class="nav-item active col col-lg-2" >
-        <a class="nav-link" href="index.html">Home </a>
+      <li class="nav-item col col-lg-2">
+        <a class="nav-link" href="index.html">Home</a>
       </li>
-      <li class="nav-item col col-lg-2" >
-        <a class="nav-link" href="guidelist.html">Our guides </a>
+			<li class="nav-item active col col-lg-2" style="box-shadow: inset 0 -1px 0 0 cyan;">
+        <a class="nav-link" href="guidelist.html">Our Guides <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item col col-lg-2" >
         <a class="nav-link" href="destination.html">Destinations</a>
@@ -40,9 +40,9 @@
       <li class="nav-item col col-lg-2">
         <a class="nav-link" href="faq.html">FAQ</a>
       </li>
-      <li class="nav-item col col-lg-2" id="login"  style="box-shadow: inset 0 -1px 0 0 cyan;">
-        <a class="nav-link log" href="login.html"> <i class="fas fa-user"></i>Log In <span class="sr-only">(current)</span></a>
-			</li>
+      <li class="nav-item col col-lg-2">
+        <a class="nav-link" href="login.html"><i class="fas fa-user"></i>Log In </a>
+      </li>
       <li class="nav-item col col-lg-2" id="signin">
         <a class="nav-link log" href="signup.html"><i class="fas fa-sign-in-alt"></i>Sign up</a>
       </li>
@@ -52,11 +52,23 @@
 
 
 
+
+
+
 <div class="container">
   <div class="col col-md-8">
-    <h1 class="mt-4 mb-4">Log In</h1>
+    <h1 class="mt-4 mb-4">Your Review</h1>
     <form>
-    <div class="mb-3"><br>
+      <div class="mb-3"><br>
+              <label for="TouristID">Tourist ID</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="touristid" placeholder="touristid" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Please enter your tourist ID.
+              </div>
+            </div>
+      </div>
+    <div class="mb-3">
             <label for="userName">User name</label>
           <div class="input-group">
             <input type="text" class="form-control" id="username" placeholder="Username" required>
@@ -66,18 +78,17 @@
           </div>
     </div>
      <div class="mb-3">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="password">
+          <label for="Review">Review</label>
+          <input type="password" class="form-control" id="comment" placeholder="Review">
           <div class="invalid-feedback">
-            Please enter a password.
+            Please enter your review.
           </div>
-        </div>
+      </div>
         <hr class="mb-4">
-        <button class="btn btn-secondary btn-lg btn-block mb-5" type="submit">Log In</button>
+        <button class="btn btn-secondary btn-lg btn-block mb-5" type="submit">Submit</button>
       </form>
     </div>
   </div>
-
 
 
 

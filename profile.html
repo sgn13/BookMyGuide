@@ -7,7 +7,11 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/profile.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+	<style media="screen">
+		.checked{
+			color: orange;
+		}
+	</style>
 </head>
 <body>
 	<div class="top">
@@ -22,39 +26,33 @@
 
   <div class=" container-fluid collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto ">
-      <li class="nav-item active col col-lg-2" style="box-shadow: inset 0 -1px 0 0 cyan;">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			<li class="nav-item col col-lg-2">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+			<li class="nav-item active col col-lg-2" style="box-shadow: inset 0 -1px 0 0 cyan;">
+        <a class="nav-link" href="guidelist.html">Our Guides <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="guidelist.html">Our guides</a>
-      </li>
-      <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="#">Destinations</a>
+        <a class="nav-link" href="destination.html">Destinations</a>
       </li>
       <li class="nav-item col col-lg-2">
         <a class="nav-link" href="#">About us</a>
       </li>
       <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="#">Gallery</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
       </li>
       <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="#">Our Services</a>
+        <a class="nav-link" href="services.html">Our Services</a>
       </li>
       <li class="nav-item col col-lg-2">
-        <a class="nav-link" href="#">FAQ</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
       </li>
-
-
-
-
     	<li class="nav-item col col-lg-2" id="login">
-        <a class="nav-link log" href="#"> <i class="fas fa-user"></i>Log In</a>
+        <a class="nav-link log" href="login.html"> <i class="fas fa-user"></i>Log In</a>
       </li>
       <li class="nav-item col col-lg-2" id="signin">
-        <a class="nav-link log" href="#"><i class="fas fa-sign-in-alt"></i>Sign In</a>
+        <a class="nav-link log" href="signup.html"><i class="fas fa-sign-in-alt"></i>Sign up</a>
       </li>
-
-
    </ul>
   </div>
 </nav>
@@ -62,8 +60,10 @@
 
 <div class="profile">
   <div class="profile-image">
-    <img src="image/sq.jpg" alt="">
+    <img src="image/samikshya.jpg" alt="">
   </div>
+	<a href="bookedprofile.html"> <button type="button" name="button">Hire</button></a>
+	<a href="review.html"><button type="button" name="button">Add Review</button></a>
   <h1>Shreejit Hora</h1>
   <h5>shreejit@gmail.com</h5><hr>
   <h2>Bio</h2>
@@ -72,6 +72,11 @@
     <span>Gender : male</span><br>
     <span>Address : Srijananagar, Bhaktapur</span><br>
     <span>Experience : 10 years</span><br>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span>
   </div><br>
   <div class="review-guide">
     <div class="review">
@@ -81,36 +86,35 @@
           <img src="image/sq.jpg" alt="">
           <span> <a href="#">Bijita Kc</a> </span><br><br>
         </div>
-        <span>i liked it but he is very flirty.But this mustang trip was the best trip of my life. This was possible only because of guide Shreejit.</span>
-      </div><br>
-
-      <div class="review-class">
-        <div class="review-tourist">
-          <img src="image/sq.jpg" alt="">
-          <span> <a href="#">Bijita Kc</a> </span><br><br>
-        </div>
-        <span>i liked it but he is very flirty.But this mustang trip was the best trip of my life. This was possible only because of guide Shreejit.</span>
+        <span>It was really an amazing experience shared with guide shreejit. we had awesome fooding and lodging. the services very pretty up to the mark.</span>
       </div><br>
       <div class="review-class">
         <div class="review-tourist">
           <img src="image/sq.jpg" alt="">
-          <span> <a href="#">Bijita Kc</a> </span><br><br>
+          <span> <a href="#">Samikshya Kunwar</a> </span><br><br>
         </div>
-        <span>i liked it but he is very flirty.But this mustang trip was the best trip of my life. This was possible only because of guide Shreejit.</span>
+        <span>we had planned for 5 days 6 nights tour for mustang. But due to Weather conditions we couldnot continue but yet our guide provided us best service he could provide at that circumstance</span>
       </div><br>
       <div class="review-class">
         <div class="review-tourist">
           <img src="image/sq.jpg" alt="">
-          <span> <a href="#">Bijita Kc</a> </span><br><br>
+          <span> <a href="#">Rachana Basnet</a> </span><br><br>
         </div>
-        <span>i liked it but he is very flirty.But this mustang trip was the best trip of my life. This was possible only because of guide Shreejit.</span>
+        <span>I was having trouble with my boyfriend's bad health condition. I was really worried. But thanks to my guide we were able to get proper medications on time and enjoy out tour.</span>
       </div><br>
       <div class="review-class">
         <div class="review-tourist">
           <img src="image/sq.jpg" alt="">
-          <span> <a href="#">Bijita Kc</a> </span><br><br>
+          <span> <a href="#">Krijan Prajapati</a> </span><br><br>
         </div>
-        <span>i liked it but he is very flirty.But this mustang trip was the best trip of my life. This was possible only because of guide Shreejit.</span>
+        <span>Travelling with guide is so much easier. We were having trouble with directions but out guide provided us best directions possible and this treasure nepal app has been very helpful suggested to us by our guide.</span>
+      </div><br>
+      <div class="review-class">
+        <div class="review-tourist">
+          <img src="image/sq.jpg" alt="">
+          <span> <a href="#">Amisha Chaudhary</a> </span><br><br>
+        </div>
+        <span>I am Quite high maintainance girl. But to those difficult places where resources were so scare out guide provided us with so many facilities and the way he clicked out pictures its memorable forever.</span>
       </div><br>
 
     </div>

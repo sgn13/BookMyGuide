@@ -51,6 +51,11 @@
   color: #000;
   text-align: center;
 }
+
+.card img{
+  height: 147px;
+  width: 308px;
+}
 /* .row{
   padding: 10px;
 } */

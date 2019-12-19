@@ -50,3 +50,22 @@
 span a{
   margin-left: 10px;
 }
+
+.profile button{
+  margin-right: 20px;
+  border: none;
+  float: right;
+  color: black;
+  font-size: large;
+  border-radius: 10px;
+}
+
+.profile button:hover{
+  color: #ffffff;
+  background-color:  #1f7693;
+}
+
+.hired {
+  color: #ffffff !important;
+  background-color:  #1f7693;
+}
