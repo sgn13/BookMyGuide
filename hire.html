@@ -58,18 +58,6 @@
 	<div class="col col-md-8">
 		<h1 class="mt-4 mb-4">Sign up</h1>
 		<form>
-			  <div class="row">
-			    <div class="col">
-			    	<label for="firstName">First name</label>
-			      <input type="text" class="form-control" placeholder="First name">
-			    </div>
-			    <div class="col">
-			    	<label for="lasName">Last name</label>
-			      <input type="text" class="form-control" placeholder="Last name">
-			    </div>
-			  </div>
-
-
 
 		<div class="mb-3"><br>
           	<label for="userName">User name</label>
@@ -84,27 +72,11 @@
           </div>
         </div>
 
-
-         <div class="mb-3">
-          <label for="email">Email <span class="text-muted"></span></label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">
-            Please enter a valid email address for shipping updates.
-          </div>
-        </div>
-
         <div class="mb-3">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="password">
+          <label for="number">Phone number</label>
+          <input type="password" class="form-control" id="number" placeholder="phone number">
           <div class="invalid-feedback">
-            Please enter a password.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="re-password">Confirm-Password</label>
-          <input type="re-password" class="form-control" id="re-password" placeholder="Re-password">
-          <div class="invalid-feedback">
-            Please enter a password.
+            Please enter your Phone number.
           </div>
         </div>
 
@@ -116,64 +88,57 @@
           </div>
         </div>
 
-         <div class="mb-3">
-          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-        </div>
-
         <div class="row">
           <div class="col-md-5 mb-3">
             <label for="country">Country</label>
             <select class="custom-select d-block w-100" id="country" required>
-              <option value="">Choose...</option>
+              <option value="">...</option>
               <option>Nepal</option>
+              <option>India</option>
+              <option>America</option>
+              <option>Australia</option>
+              <option>Japan</option>
             </select>
             <div class="invalid-feedback">
               Please select a valid country.
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <label for="state">State</label>
+          <div class="col-md-5 mb-3">
+            <label for="date">Available date</label>
             <select class="custom-select d-block w-100" id="state" required>
-              <option value="">Choose...</option>
-              <option>Kathmandu</option>
-              <option>Bhaktpur</option>
-              <option>Lalitpur</option>
-              <option>Pokhara</option>
-              <option>Birgunj</option>
-              <option>Biratnagar</option>
-
-
-
+              <option value="">...</option>
+              <option>2020-1-20</option>
+              <option>2020-1-28</option>
+              <option>2020-2-10</option>
+              <option>2020-2-20</option>
+              <option>2020-3-10</option>
+              <option>2020-3-20</option>
             </select>
             <div class="invalid-feedback">
-              Please provide a valid state.
+              Please select a date.
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <label for="zip">Zip</label>
-            <input type="text" class="form-control" id="zip" placeholder="" required>
+          <div class="col-md-5 mb-3">
+            <label for="payment">APayment</label>
+            <select class="custom-select d-block w-100" id="pay" required>
+              <option value="">...</option>
+              <option>VISA</option>
+              <option>PayPal</option>
+              <option>Master Card</option>
+            </select>
             <div class="invalid-feedback">
-              Zip code required.
+              Please select a paymentMethod.
             </div>
-          </div>
-        </div>
-        <div class="d-block my-3">
-        	<span>Choose :</span>
-          <div class="custom-control custom-radio">
-            <input id="guide" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-            <label class="custom-control-label" for="guide">Guide</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input id="tourist" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="tourist">Tourist</label>
-          </div>
-
+          </div><hr>
+          <h3>    price : Rs.10,000 /-</h3>
+          <!-- <div class="col-md-3 mb-3">
+            <label for="price">price : Rs.10,000 /-</label>
+          </div> -->
         </div>
 
 
         <hr class="mb-4">
-        <button class="btn btn-secondary btn-lg btn-block" type="submit" onclick="checkPerson()">Sign Up</button>
+      <a href="bookedprofile.html">  <button class="btn btn-secondary btn-lg btn-block" type="submit">Hire</button></a>
       </form>
     </div>
   </div>
@@ -242,24 +207,6 @@
 
   </div>
   <!-- Footer Text -->
-
-
-
-  <!-- js -->
-  <script>
-function checkPerson()
-{
-    if(document.getElementById('guide').checked)
-    {
-        window.open('guideform.html');
-    }
-    else if(document.getElementById('tourist').checked)
-    {
-         window.location.href="guidelist.html";
-    }
-
-}
-</script>
 
 
 
